@@ -57,6 +57,12 @@ h4 {
   text-decoration: none;
   padding: 1rem 1.5rem;
   margin: 1rem 0 0;
+  transition: transform 0.3s ease-out;
+}
+
+.btn:hover {
+  transform: scale(1.2);
+  font-weight: bold;
 }
 
 .grabbing {
