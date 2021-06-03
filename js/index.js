@@ -9,10 +9,10 @@ let animationID = 0;
 let currentIndex = 0;
 
 const getPositionX = (event) => {
-  startPosition = event.type.includes('mouse')
+  const position = event.type.includes('mouse')
     ? event.pageX
     : event.touches[0].clientX;
-  return startPosition;
+  return position;
 };
 
 const setContainerPosition = () => {
