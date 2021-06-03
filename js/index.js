@@ -16,7 +16,7 @@ const getPositionX = (event) => {
 };
 
 const setContainerPosition = () => {
-  container.style.transform = `translateX(${currentTranslate}px)`;
+  container.style.transform = `translateX(${currentTranslate}vw)`;
 };
 
 const animation = () => {
@@ -25,7 +25,7 @@ const animation = () => {
 };
 
 const setPositionByIndex = () => {
-  currentTranslate = currentIndex * -window.innerWidth;
+  currentTranslate = currentIndex * -100;
   previousTranslate = currentTranslate;
   setContainerPosition();
 };
